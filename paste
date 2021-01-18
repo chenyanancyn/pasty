@@ -1,0 +1,5 @@
+First a dataset is selected at random. Next, a sequence is selected
+    from that dataset. A base frame is then sampled randomly from the sequence. Next, a set of 'train frames' and
+    'test frames' are sampled from the sequence from the range [base_frame_id - max_gap, base_frame_id]  and
+    (base_frame_id, base_frame_id + max_gap] respectively. Only the frames in which the target is visible are sampled.
+    If enough visible frames are not found, the 'max_gap' is increased gradually till enough frames
